@@ -3,6 +3,11 @@
 ```bash
 git clone https://github.com/Akshat2403/takeleapAssignment.git
 ```
+
+```bash
+cd takeleapAssignment
+```
+
 #### Install Dependencies
 ```bash
 npm i 
