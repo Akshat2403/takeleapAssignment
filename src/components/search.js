@@ -1,7 +1,6 @@
 import {
   Autocomplete,
   TextField,
-  Button,
   Typography,
   CircularProgress,
   debounce,
@@ -49,6 +48,7 @@ export default function Search() {
 
   return (
     <>
+      {/* Heading */}
       <Typography
         variant="h3"
         sx={{ margin: 2, textAlign: "center" }}
@@ -57,6 +57,7 @@ export default function Search() {
       >
         College Selector
       </Typography>
+      {/* Autocomplete search */}
       <Autocomplete
         sx={{ width: 3 / 4, maxWidth: 1000, margin: 2 }}
         options={options}
@@ -88,6 +89,7 @@ export default function Search() {
         )}
       />
       {value && !error && (
+        // Image
         <Box
           sx={{
             display: "flex",
@@ -108,6 +110,7 @@ export default function Search() {
         </Box>
       )}
       {error && (
+        // Error
         <Typography variant="h5" sx={{ marginTop: 2, color: "red" }}>
           {error}
         </Typography>
